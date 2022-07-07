@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 30px 0;
+            }
+            input {
+                width: 415px;
+                height: 80px;
+                border-radius: 15px;
+                padding: 20px;
+                font-size: 30px;
+            }
+            .button {
+                width: 100px;
+                height: 80px;
+                font-size: 40px;
+                border-radius: 15px;
+            }
+        </style>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <main>
+            <input id="input" readonly="readonly" />
+            <table>
+                <tbody>
+                    <tr>
+                        <td><button id="ac" class="button btn btn-outline-dark" onclick="operator('AC')">AC</button></td>
+                        <td><button  id="del" class="button btn btn-outline-dark" onclick="operator('Del')">Del</button></td>
+                        <td></td>
+                        <td><button id="div" class="button btn btn-outline-dark" onclick="operator('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="num7" class="button btn btn-outline-dark" onclick="number(7)">7</button></td>
+                        <td><button id="num8" class="button btn btn-outline-dark" onclick="number(8)">8</button></td>
+                        <td><button id="num9" class="button btn btn-outline-dark" onclick="number(9)">9</button></td>
+                        <td><button id="mult" class="button btn btn-outline-dark" onclick="operator('*')">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="num4" class="button btn btn-outline-dark" onclick="number(4)">4</button></td>
+                        <td><button id="num5" class="button btn btn-outline-dark" onclick="number(5)">5</button></td>
+                        <td><button id="num6" class="button btn btn-outline-dark" onclick="number(6)">6</button></td>
+                        <td><button id="min" class="button btn btn-outline-dark" onclick="operator('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="num1" class="button btn btn-outline-dark" onclick="number(1)">1</button></td>
+                        <td><button id="num2" class="button btn btn-outline-dark" onclick="number(2)">2</button></td>
+                        <td><button id="num3" class="button btn btn-outline-dark" onclick="number(3)">3</button></td>
+                        <td><button id="plus" class="button btn btn-outline-dark" onclick="operator('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button id="num0" class="button btn btn-outline-dark" onclick="number(0)">0</button></td>
+                        <td><button id="dot" class="button btn btn-outline-dark" onclick="operator('.')">.</button></td>
+                        <td><button id="calc" class="button btn btn-outline-dark" onclick="calculate()">=</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>
